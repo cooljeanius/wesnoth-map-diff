@@ -25,6 +25,6 @@
     "fast-check": "2.25.0",
     "jest": "27.5.0",
     "jest-fast-check": "1.0.2",
-    "typescript": "4.5.5"
+    "typescript": "5.2.2"
   }
 }
