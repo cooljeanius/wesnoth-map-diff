@@ -11,7 +11,7 @@
   "author": "macabeus",
   "license": "GNU GPL v2+",
   "dependencies": {
-    "jimp": "0.16.1",
+    "jimp": "0.22.10",
     "parsimmon": "1.18.1"
   },
   "devDependencies": {
