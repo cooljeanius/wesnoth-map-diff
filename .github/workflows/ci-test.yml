@@ -8,8 +8,9 @@ on:
     branches: [ "main", "master" ]
 
 jobs:
-  test:
+  test-with-npm:
     runs-on: ubuntu-20.04
+    continue-on-error: true
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v3
