@@ -6,7 +6,7 @@
 
 1 - Make sure you have Node on your system. If you don't have it, install it. If you are using macOS or Linux, you can install Node using [nvm](https://github.com/nvm-sh/nvm). On Windows, use [nvm-windows](https://github.com/coreybutler/nvm-windows).
 
-2 - Open the terminal on `utils/wesnoth-map-diff` folder and run the following command to install the project dependencies:
+2 - Open the terminal in the `wesnoth-map-diff` folder and run the following command to install the project dependencies:
 
 ```
 npm i
