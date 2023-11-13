@@ -1,6 +1,6 @@
 # wesnoth-map-diff
 
-> 🗺 Print the diff between two maps
+> 🗺 Print the diff between two Wesnoth maps
 
 ## Setup
 
