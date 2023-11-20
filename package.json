@@ -1,6 +1,6 @@
 {
   "name": "wesnoth-map-diff",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Visual map differ for Battle for Wesnoth",
   "scripts": {
     "build:dev": "tsc -p tsconfig-dev.json",
