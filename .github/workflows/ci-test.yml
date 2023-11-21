@@ -37,5 +37,11 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: '16'
+    - name: Package install
+      run: yarn install
     - name: Package build
       run: yarn
+    - name: Package test
+      run: yarn check
+    - name: Package audit
+      run: yarn audit
