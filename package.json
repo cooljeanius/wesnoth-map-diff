@@ -9,7 +9,7 @@
     "lint": "eslint . --cache"
   },
   "author": "macabeus",
-  "license": "GNU GPL v2+",
+  "license": "GPL-2.0-or-later",
   "dependencies": {
     "jimp": "^0.22.10",
     "parsimmon": "1.18.1"
