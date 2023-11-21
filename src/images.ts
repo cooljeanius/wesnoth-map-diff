@@ -61,6 +61,7 @@ const produceImagesGetter = async (): Promise<ImagesGetter> => {
   ])
 
   focus.color([
+    // @ts-expect-error hue
     { apply: 'hue', params: [-90] },
   ])
 
