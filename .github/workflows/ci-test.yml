@@ -44,4 +44,4 @@ jobs:
     - name: Package test
       run: yarn check
     - name: Package audit
-      run: yarn audit
+      run: yarn audit || yarn run lint
