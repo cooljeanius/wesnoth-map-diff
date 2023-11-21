@@ -10,6 +10,12 @@ on:
 jobs:
   test-with-npm:
     runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+      matrix:
+        buildtype:
+          - dev
+          - prod
     continue-on-error: true
     steps:
     - uses: actions/checkout@v4
@@ -19,8 +25,17 @@ jobs:
     - name: Package install
       run: npm install
     - name: Package build
-      run: npm run build:dev || npm run build:prod || yarn
+      run: npm run build:${{ matrix.buildtype }}
     - name: Package test
       run: npm run test
     - name: Package lint
       run: npm run lint
+  test-with-yarn:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+    - name: Package build
+      run: yarn
