@@ -1,4 +1,4 @@
-import { testProp, fc } from 'jest-fast-check'
+import { testProp, fc } from '@fast-check/jest'
 import type { WmlParsed } from '../src/wml/parser'
 import rootByTagName from '../src/wml/rootByTagName'
 import { wmlName } from './arbitraries'
