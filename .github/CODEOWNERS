@@ -1,4 +1,4 @@
-.eslintignore macabeus
+.eslintignore @macabeus
 .eslintrc.js @macabeus
 .github/CODEOWNERS @cooljeanius
 .github/dependabot.yml @cooljeanius
@@ -16,8 +16,8 @@ cli.js @cooljeanius
 jest.config.js @macabeus
 font/DejaVuSansMono.fnt @macabeus
 font/DejaVuSansMono.png @macabeus
-package-lock.json @dependabot
-package.json @macabeus @dependabot @cooljeanius
+package-lock.json @dependabot-bot
+package.json @macabeus @dependabot-bot @cooljeanius
 setup-jest.d.ts @macabeus
 setup-jest.js @macabeus
 src/images.ts @macabeus
