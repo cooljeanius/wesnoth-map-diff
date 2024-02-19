@@ -1,0 +1,34 @@
+.eslintignore @macabeus
+.eslintrc.js @macabeus
+.github/CODEOWNERS @cooljeanius
+.github/dependabot.yml @cooljeanius
+.github/workflows/ci-test.yml @cooljeanius
+.github/workflows/codeql.yml @cooljeanius
+.github/workflows/eslint.yml @cooljeanius
+.github/workflows/njsscan.yml @cooljeanius
+.gitignore @macabeus @cooljeanius
+CODE_OF_CONDUCT.md @cooljeanius
+CONTRIBUTING.md @cooljeanius
+LICENSE @cooljeanius @Pentarctagon
+README.md @macabeus @cooljeanius
+babel.config.js @macabeus
+cli.js @cooljeanius
+jest.config.js @macabeus
+font/DejaVuSansMono.fnt @macabeus
+font/DejaVuSansMono.png @macabeus
+package-lock.json @dependabot-bot
+package.json @macabeus @dependabot-bot @cooljeanius
+setup-jest.d.ts @macabeus
+setup-jest.js @macabeus
+src/images.ts @macabeus
+src/index.ts @macabeus
+src/paint.ts @macabeus
+src/tilemap.ts @macabeus
+src/wml/parser.ts @macabeus
+src/wml/rootByTagName.ts @macabeus
+tests/arbitraries.ts @macabeus
+tests/parser.test.ts @macabeus
+tests/rootByTagName.test.ts @macabeus
+tsconfig-dev.json @macabeus
+tsconfig-prod.json @macabeus
+tsconfig.json @macabeus
