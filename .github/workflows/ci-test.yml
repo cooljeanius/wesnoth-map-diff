@@ -1,11 +1,12 @@
+---
 name: "Test (CI)"
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: ["main", "master"]
   pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "main", "master" ]
+    # The branches below must be a subset of the branches above:
+    branches: ["main", "master"]
 
 jobs:
   test-with-npm:
@@ -18,30 +19,30 @@ jobs:
           - prod
     continue-on-error: true
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: '16'
-    - name: Package install
-      run: npm install
-    - name: Package build
-      run: npm run build:${{ matrix.buildtype }}
-    - name: Package test
-      run: npm run test
-    - name: Package lint
-      run: npm run lint
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+      - name: Package install
+        run: npm install
+      - name: Package build
+        run: npm run build:${{ matrix.buildtype }}
+      - name: Package test
+        run: npm run test
+      - name: Package lint
+        run: npm run lint
   test-with-yarn:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: '16'
-    - name: Package install
-      run: yarn install
-    - name: Package build
-      run: yarn
-    - name: Package test
-      run: yarn check
-    - name: Package audit
-      run: yarn audit || yarn run lint
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+      - name: Package install
+        run: yarn install
+      - name: Package build
+        run: yarn
+      - name: Package test
+        run: yarn check
+      - name: Package audit
+        run: yarn audit || yarn run lint

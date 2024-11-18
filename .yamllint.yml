@@ -1,0 +1,14 @@
+---
+# https://yamllint.readthedocs.io/en/stable/configuration.html
+extends: default
+
+ignore:
+  - node_modules
+
+rules:
+  float-values: enable
+  line-length:
+    max: 81
+    level: warning
+  octal-values: enable
+  truthy: disable
