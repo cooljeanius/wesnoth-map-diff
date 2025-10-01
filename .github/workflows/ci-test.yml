@@ -3,14 +3,14 @@ name: "Test (CI)"
 
 on:
   push:
-    branches: ["main", "master"]
+    branches: ["main", "master", "workflows-update"]
   pull_request:
     # The branches below must be a subset of the branches above:
-    branches: ["main", "master"]
+    branches: ["main", "master", "workflows-update"]
 
 jobs:
   test-with-npm:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     strategy:
       fail-fast: false
       matrix:
@@ -32,7 +32,7 @@ jobs:
       - name: Package lint
         run: npm run lint
   test-with-yarn:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
