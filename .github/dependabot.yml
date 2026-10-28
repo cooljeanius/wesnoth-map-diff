@@ -9,7 +9,7 @@ updates:
   - package-ecosystem: "github-actions"  # See docs for possible values
     directory: "/"  # Location of package manifests
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     labels:
       - enhancement
     groups:
@@ -21,7 +21,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     labels:
       - enhancement
     groups:
